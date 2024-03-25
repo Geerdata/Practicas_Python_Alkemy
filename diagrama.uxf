@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>900</x><y>200</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>912</x><y>144</y><w>168</w><h>152</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
 EstadoPedido
 
 - PENDIENTE
@@ -7,33 +7,48 @@ EstadoPedido
 - ENVIADO
 - ENTREGADO
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;PEDIDO&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>584</x><y>160</y><w>168</w><h>152</h></coordinates><panel_attributes>&lt;&lt;PEDIDO&gt;&gt;
 
 - FECHA
-- ESTADO: EstadoPedido</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+- ESTADO: EstadoPedido</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>344</y><w>168</w><h>152</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
 TipoTarjeta
 
 - VISA
 - MATERCARD
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>230</y><w>200</w><h>190</h></coordinates><panel_attributes>&lt;&lt;CLIENTE&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>288</x><y>168</y><w>160</w><h>152</h></coordinates><panel_attributes>&lt;&lt;CLIENTE&gt;&gt;
 
 - DNI
-- NOMBRE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>680</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;LineaPedido&gt;&gt;
+- NOMBRE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>608</x><y>424</y><w>168</w><h>152</h></coordinates><panel_attributes>&lt;&lt;LineaPedido&gt;&gt;
 
 - Cantidad
 - Precio
 - Impuesto
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>740</y><w>280</w><h>60</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>480</y><w>136</w><h>200</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-teaches to &gt;</panel_attributes><additional_attributes>10;20;260;30</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>260</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+teaches to &gt;</panel_attributes><additional_attributes>10;10;140;230</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>192</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-teaches to &gt;</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>680</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Producto&gt;&gt;
+teaches to &gt;</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>592</y><w>168</w><h>152</h></coordinates><panel_attributes>&lt;&lt;Producto&gt;&gt;
 
-- Precio Actual</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>400</y><w>270</w><h>300</h></coordinates><panel_attributes>lt=-
+- Precio Actual</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>304</y><w>88</w><h>136</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-teaches to &gt;</panel_attributes><additional_attributes>240;10;10;280</additional_attributes></element></diagram>
+teaches to &gt;</panel_attributes><additional_attributes>10;10;20;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>272</x><y>336</y><w>168</w><h>72</h></coordinates><panel_attributes>&lt;&lt;Forma de pago&gt;&gt;
+
+- Importe</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>248</x><y>608</y><w>160</w><h>72</h></coordinates><panel_attributes>&lt;&lt;Efectivo&gt;&gt;
+
+- Moneda</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>608</y><w>160</w><h>72</h></coordinates><panel_attributes>&lt;&lt;TarjetaCredito&gt;&gt;
+
+- Fecha_Caducidad
+- Numero
+- Tipo_Tarjeta
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>424</x><y>608</y><w>160</w><h>72</h></coordinates><panel_attributes>&lt;&lt;Cheque&gt;&gt;
+
+- Nombr</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>400</y><w>88</w><h>224</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;90;260</additional_attributes></element><element><id>Relation</id><coordinates><x>328</x><y>400</y><w>48</w><h>224</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>20;10;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>128</x><y>400</y><w>192</w><h>224</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>210;10;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>240</y><w>160</w><h>152</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>180;10;10;170</additional_attributes></element></diagram>
