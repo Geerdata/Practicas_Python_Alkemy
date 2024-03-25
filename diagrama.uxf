@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>900</x><y>200</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+EstadoPedido
+
+- PENDIENTE
+- PAGADO
+- PROCESADO
+- ENVIADO
+- ENTREGADO
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;PEDIDO&gt;&gt;
+
+- FECHA
+- ESTADO: EstadoPedido</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoTarjeta
+
+- VISA
+- MATERCARD
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>230</y><w>200</w><h>190</h></coordinates><panel_attributes>&lt;&lt;CLIENTE&gt;&gt;
+
+- DNI
+- NOMBRE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>680</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;LineaPedido&gt;&gt;
+
+- Cantidad
+- Precio
+- Impuesto
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>740</y><w>280</w><h>60</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>10;20;260;30</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>260</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>680</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Producto&gt;&gt;
+
+- Precio Actual</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>400</y><w>270</w><h>300</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>240;10;10;280</additional_attributes></element></diagram>
