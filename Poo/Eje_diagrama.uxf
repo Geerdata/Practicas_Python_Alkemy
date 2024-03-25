@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>180</x><y>40</y><w>210</w><h>260</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+
+- DNI
+- NOMBRE
+- APELLIDO
+- AÑO DE INGRESO
+
+--
+Mostrar_Salario()
+Obtener_Antiguedad()
+Obtener_Salario()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>520</y><w>210</w><h>260</h></coordinates><panel_attributes>&lt;&lt;EmpleadoSalarioFijo&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+
+- Sueldo Basico
+
+--
+Mostrar_porcentaje_Antiguedad()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>520</y><w>210</w><h>260</h></coordinates><panel_attributes>&lt;&lt;EmpleadoPorComisión&gt;&gt;
+--
+
+- Salario Minimo
+- Clientes Captados
+- Monto a cobrar Cliente Captado
+
+--
+Obtener_Salario()
+Empleados_con_mas_Clientes(Lista_Empleados)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>290</y><w>80</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;230</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>290</y><w>130</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;220</additional_attributes></element></diagram>
