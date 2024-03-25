@@ -21,7 +21,6 @@ elif nivel > 2 and nivel < 4:
 else:
    print('Acceso Denegado')
 
-  
 
 
 
